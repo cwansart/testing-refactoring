@@ -8,8 +8,8 @@ describe("todo-app", () => {
     cy.get("#todo-list li").should("have.length", 0);
   });
   it("should create new todos", () => {
-    cy.get("#new-todo").type("Learn CSS");
-    cy.get("#add-todo").click();
-    cy.get("#todo-list li").should("have.length", 1);
+    cy.get("#inputTodo").type("Learn CSS");
+    cy.get("#submit").click();
+    cy.get("#todo-items li").should("have.length", 1);
   });
 });
